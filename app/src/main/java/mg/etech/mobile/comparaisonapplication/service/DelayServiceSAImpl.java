@@ -2,6 +2,8 @@ package mg.etech.mobile.comparaisonapplication.service;
 
 import org.androidannotations.annotations.EBean;
 
+import java.util.Date;
+
 /**
  * Created by mahery.haja on 25/10/2017.
  */
@@ -14,6 +16,6 @@ public class DelayServiceSAImpl implements DelayServiceSA {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return delay;
+        return new Date().getSeconds();
     }
 }
